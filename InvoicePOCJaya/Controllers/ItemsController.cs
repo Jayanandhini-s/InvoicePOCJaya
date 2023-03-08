@@ -61,7 +61,7 @@ namespace InvoicePOCJaya.Controllers
             I.LineTotal = LineTotal;
             _context.Add(I);
             await _context.SaveChangesAsync();
-            return RedirectToAction("Index");
+            return RedirectToAction("Index","Invoices");
 
             //return View(food);
         }
